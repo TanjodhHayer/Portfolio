@@ -4,7 +4,6 @@
 'use client';
 
 import Link from "next/link";
-import { useTheme } from "next-themes";
 
 export default function Header() {
   return (
