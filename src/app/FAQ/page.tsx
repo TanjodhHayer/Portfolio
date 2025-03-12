@@ -101,7 +101,7 @@ const FAQ = () => {
               <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mb-4">Resume/CV</h2>
               <h4>
                 Download my resume: 
-                <a href="resume.pdf" className="text-blue-500 hover:text-blue-700"> Tanjodh Hayer Resume PDF</a>
+                <a href="/resume.pdf" className="text-blue-500 hover:text-blue-700" download> Tanjodh Hayer Resume</a>
               </h4>
             </section>
           </div>
