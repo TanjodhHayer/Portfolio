@@ -1,35 +1,71 @@
-// src/app/components/Projects.tsx
+// src/app/components/ExperienceAndProjects.tsx
+import React from "react";
 
-const Projects = () => {
-    return (
-      <section className="py-16 px-8 bg-gradient-to-b from-gray-100 to-gray-200 dark:from-gray-800 dark:to-gray-900">
+const ExperienceAndProjects = () => {
+  return (
+    <section className="py-16 px-8 bg-gradient-to-b from-gray-100 to-gray-200 dark:from-gray-800 dark:to-gray-900 max-w-7xl mx-auto">
+      {/* Experience Section */}
+      <div className="mb-20 max-w-5xl mx-auto">
+        <h2 className="text-4xl font-bold text-center text-gray-800 dark:text-gray-100 mb-12">
+          Experience
+        </h2>
+
+        {/* Software Developer */}
+        <article className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-8 mb-10 hover:scale-[1.02] transition-transform duration-300 ease-in-out">
+          <h3 className="text-2xl font-semibold text-gray-900 dark:text-white mb-2">
+            Software Developer — Royal City Taxi
+          </h3>
+          <p className="text-gray-600 dark:text-gray-300 italic mb-4">
+            December 2024 - Present
+          </p>
+          <ul className="list-disc list-inside text-gray-700 dark:text-gray-300 space-y-2">
+            <li>
+              Designed, developed, and deployed a new online booking system using React, streamlining Royal City Taxi’s digital presence.
+            </li>
+            <li>
+              Monitored user engagement via Google Cloud Platform, achieving hundreds of bookings and tens of thousands of impressions.
+            </li>
+            <li>
+              Collected user feedback, created acceptance criteria, and pitched designs to stakeholders; built automated email confirmation functionality with Nodemailer and Gmail SMTP, sending hundreds of confirmations monthly.
+            </li>
+            <li>
+              Implemented secure authentication and real-time data management with Firebase, supporting user accounts and service interactions.
+            </li>
+            <li>
+              Integrated Google Maps API for location selection with address autocomplete and distance-based logic to improve UX.
+            </li>
+            <li>
+              Provided ongoing maintenance, feature updates, hosting management, bug fixes, and client support post-launch.
+            </li>
+          </ul>
+        </article>
+
+        {/* Computer Science Tutor */}
+        <article className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-8 hover:scale-[1.02] transition-transform duration-300 ease-in-out">
+          <h3 className="text-2xl font-semibold text-gray-900 dark:text-white mb-2">
+            Computer Science Tutor
+          </h3>
+          <p className="text-gray-600 dark:text-gray-300 italic mb-4">
+            September 2024 - December 2024
+          </p>
+          <ul className="list-disc list-inside text-gray-700 dark:text-gray-300 space-y-2">
+            <li>
+              Conducted one-on-one and group tutoring sessions on foundational Python programming concepts including syntax, data types, control structures, and data structures.
+            </li>
+            <li>
+              Introduced basic machine learning concepts and guided students through hands-on projects using scikit-learn, such as linear regression and k-means clustering.
+            </li>
+          </ul>
+        </article>
+      </div>
+
+      {/* Projects Section */}
+      <div className="max-w-7xl mx-auto">
         <h2 className="text-4xl font-bold text-center text-gray-800 dark:text-gray-100 mb-12">
           My Projects
         </h2>
-  
+
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-12">
-          {/* RoyalCityTaxi Website */}
-          <a
-            href="https://github.com/TanjodhHayer/RoyalCityTaxi"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden transform transition-all hover:scale-105 hover:shadow-xl"
-          >
-            <div className="p-6">
-              <h3 className="text-2xl font-semibold text-gray-900 dark:text-white mb-4">
-                RoyalCityTaxi Website
-              </h3>
-              <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
-                Built with Next.js, Tailwind CSS, Firebase, Google API
-              </p>
-              <ul className="text-gray-700 dark:text-gray-300 space-y-3">
-                <li>Developed a fully responsive web application.</li>
-                <li>Integrated Google API for location-based features.</li>
-                <li>Optimized for performance using Next.js image handling and SEO.</li>
-              </ul>
-            </div>
-          </a>
-  
           {/* Predicting Diabetes */}
           <a
             href="https://github.com/TanjodhHayer/Predicting-Diabetes"
@@ -51,7 +87,7 @@ const Projects = () => {
               </ul>
             </div>
           </a>
-  
+
           {/* LightNovel Recommender */}
           <a
             href="https://github.com/TanjodhHayer/LNProject"
@@ -73,7 +109,7 @@ const Projects = () => {
               </ul>
             </div>
           </a>
-  
+
           {/* BGC Engineering Inventory System */}
           <a
             href="https://github.com/TanjodhHayer/bgc-engineering-inventory-management"
@@ -95,7 +131,7 @@ const Projects = () => {
               </ul>
             </div>
           </a>
-  
+
           {/* DailyDime Financial App */}
           <a
             href="https://github.com/TanjodhHayer/DailyDime-Website"
@@ -117,7 +153,7 @@ const Projects = () => {
               </ul>
             </div>
           </a>
-  
+
           {/* Game Predictor */}
           <a
             href="https://github.com/TanjodhHayer/GamePredictor"
@@ -139,7 +175,7 @@ const Projects = () => {
               </ul>
             </div>
           </a>
-  
+
           {/* Parent App */}
           <a
             href="https://github.com/TanjodhHayer/ParentApp"
@@ -161,7 +197,7 @@ const Projects = () => {
               </ul>
             </div>
           </a>
-  
+
           {/* Consumable Item List Tracker */}
           <a
             href="https://github.com/TanjodhHayer/Consumable-Item-List-Tracker"
@@ -184,9 +220,9 @@ const Projects = () => {
             </div>
           </a>
         </div>
-      </section>
-    );
-  };
-  
-  export default Projects;
-  
+      </div>
+    </section>
+  );
+};
+
+export default ExperienceAndProjects;

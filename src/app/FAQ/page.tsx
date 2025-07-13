@@ -17,7 +17,7 @@ const FAQ = () => {
             {/* FAQ Content */}
             <section className="bg-white dark:bg-gray-800 rounded-xl shadow-xl p-6 mb-8 transition-transform transform hover:scale-105 duration-300 ease-in-out">
               <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mb-4">Technical Skills</h2>
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
                 <div className="bg-gray-100 dark:bg-gray-700 p-6 rounded-lg shadow-md">
                   <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-3">Languages</h3>
                   <ul className="list-none space-y-2 text-gray-700 dark:text-gray-300">
@@ -27,9 +27,6 @@ const FAQ = () => {
                     <li>TypeScript</li>
                     <li>JavaScript</li>
                     <li>SQL</li>
-                    <li>Rust</li>
-                    <li>Haskell</li>
-                    <li>Kotlin</li>
                   </ul>
                 </div>
                 <div className="bg-gray-100 dark:bg-gray-700 p-6 rounded-lg shadow-md">
@@ -59,21 +56,6 @@ const FAQ = () => {
                     <li>MSSQL</li>
                   </ul>
                 </div>
-                <div className="bg-gray-100 dark:bg-gray-700 p-6 rounded-lg shadow-md">
-                    <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-3">Libraries</h3>
-                    <ul className="list-none space-y-2 text-gray-700 dark:text-gray-300">
-                        <li>pandas</li>
-                        <li>NumPy</li>
-                        <li>Matplotlib</li>
-                        <li>Seaborn</li>
-                        <li>scikit-learn</li>
-                        <li>PyTorch</li>
-                        <li>TensorFlow</li>
-                        <li>BeautifulSoup</li>
-                        <li>Redis</li>
-                    </ul>
-                    </div>
-
               </div>
             </section>
 
